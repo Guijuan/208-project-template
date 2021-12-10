@@ -60,14 +60,12 @@ npm run serve or yarn serve
         ├── Home.css #样式处理
         └── Home.vue #对所有的子组件进行布局
 ```
-1. Js 文件命名： 小驼峰法 如 pieChartHelp 第一个单词小写,其他单词首字母大写
-2. components 文件命名： 大驼峰法 如 PieChart 所有单词首字母大写
-3. api 请求函数全部放在 api 文件夹中
-4. 状态全部放在 store 中进行管理
-5. 请求数据的代码可以放在 mutations 中
-6. 每个组件独享的函数可以放在组件下面的 xxxHelp.Js 文件中
-7. 通用型的函数可以放在 utils 中
-8. 布局全部放在 Layout.vue 中进行处理如下
+1. api 请求函数全部放在 api 文件夹中
+2. 状态全部放在 store 中进行管理
+3. 请求数据的代码可以放在 mutations 中
+4. 每个组件独享的函数可以放在组件下面的 xxxHelp.Js 文件中
+5. 通用型的函数可以放在 utils 中
+6. 布局全部放在 Layout.vue 中进行处理如下
    ```html
    <div class="layout">
      <div class="top">
@@ -89,8 +87,12 @@ npm run serve or yarn serve
      </style>
    </div>
    ```
-9. 常量一般全部大写，每个单词使用分隔符隔开，比如
-   `const BASE_URL = 'http://localhost:3000/';`变量使用小驼峰命名法
+## 代码命名规范
+1. JS 文件命名： 小驼峰法 如 pieChartHelp 第一个单词小写,其他单词首字母大写
+2. Components 文件命名： 大驼峰法 如 PieChart 所有单词首字母大写
+3. 常量一般全部大写，每个单词使用分隔符隔开，比如
+   `const BASE_URL = 'http://localhost:3000/';`
+4. 变量使用小驼峰命名法。
 
 ## prettier配置
 加入了prettier配置（`.prettierrc.js`）,使用prettier格式化文件，例如使用
