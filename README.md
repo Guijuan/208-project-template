@@ -105,9 +105,9 @@ npm run serve or yarn serve
 
 下面这个网址是`prettier`一个简单的教程很有用可以看看
 
-文字教程：`https://juejin.cn/post/6990929456382607374`
+文字教程:  [https://juejin.cn/post/6990929456382607374](https://juejin.cn/post/6990929456382607374)
 
-相应的视频教程：`https://www.bilibili.com/video/BV183411r7YK?from=search&seid=5236192765464508070`
+视频教程：  [https://www.bilibili.com/video/BV183411r7YK?from=search&seid=5236192765464508070](https://www.bilibili.com/video/BV183411r7YK?from=search&seid=5236192765464508070)
 
-下面的网址是配置`prettierrc.js`的官网`https://prettier.io/docs/en/options.html?spm=a2c4e.11153940.blogcont422690.11.5d0b5721zZ3CkZ`
+下面的网址是配置`prettierrc.js`的[官网](https://prettier.io/docs/en/options.html?spm=a2c4e.11153940.blogcont422690.11.5d0b5721zZ3CkZ)
 
