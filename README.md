@@ -37,7 +37,7 @@ npm run serve or yarn serve
     │   ├── pieChartApi.js #具体图表的某个请求
     │   └── scatterChartApi.js #具体图表的某个请求
     ├── assets #存放图标等一些文件
-    │   └── logo.png 
+    │   └── logo.png
     ├── components #存放具体的组件
     │   ├── PieChart #单个具体的组件
     │   │   ├── pieChart.css #这个组件的样式
@@ -111,3 +111,5 @@ npm run serve or yarn serve
 
 下面的网址是配置`prettierrc.js`的[官网](https://prettier.io/docs/en/options.html?spm=a2c4e.11153940.blogcont422690.11.5d0b5721zZ3CkZ)
 
+## vue单页面改为多页面
+主要是配置webpack。 下面的链接是把vue单页面改为多页面的教程。https://www.jianshu.com/p/eceb2ac9df90
