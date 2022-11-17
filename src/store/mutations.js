@@ -10,4 +10,7 @@ export default {
   getScatterChartData(state, payload) {
     state.scatterChartData = payload;
   },
+  getBarChartData(state, payload) {
+    state.barChartData = payload
+  }
 };

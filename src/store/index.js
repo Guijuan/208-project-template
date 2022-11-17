@@ -4,7 +4,8 @@ import actions from './actions';
 const state = {
   count: 1,
   scatterChartData: null,
-  pieChartData:null
+  pieChartData:null,
+  barChartData:null,
 }
 export default createStore({
   state,

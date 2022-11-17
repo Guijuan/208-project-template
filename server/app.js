@@ -4,6 +4,7 @@ const port = 3000;
 
 const scatterChartRouter = require('./routes/scatterChart');
 const pieChartRouter = require('./routes/pieChart');
+const barChartRouter = require('./routes/barChart');
 
 app.all('*', function (req, res, next) {
   res.header('Access-Control-Allow-Origin', '*');
@@ -16,6 +17,7 @@ app.all('*', function (req, res, next) {
 
 app.use('/getScatterChartData', scatterChartRouter);
 app.use('/getPieChartData', pieChartRouter);
+app.use('/getBarChartData', barChartRouter);
 
 
 app.listen(port, () => {
