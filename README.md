@@ -55,6 +55,8 @@ npm run serve or yarn serve
     │   ├── index.js
     │   └── mutations.js #同步修改state
     ├── utils #项目的通用功能函数
+    |   └──js公共的js文件
+    |   └──css公共的样式文件
     │   └── hlep.js
     └── views #视图组件
         ├── Home.css #样式处理
@@ -113,3 +115,63 @@ npm run serve or yarn serve
 
 ## vue单页面改为多页面
 主要是配置webpack。 下面的链接是把vue单页面改为多页面的教程。https://www.jianshu.com/p/eceb2ac9df90
+
+
+
+# 前后端
+
+## 前端发送请求和接收数据
+
+以barChart组件为例：
+
+![image-20221124175252840](README.assets/image-20221124175252840.png)
+
+1. 在api目录下创建一个js文件：该文件下编写请求后端接口的函数
+
+![image-20221124175303260](README.assets/image-20221124175303260.png)
+
+![image-20221124175314922](README.assets/image-20221124175314922.png)
+
+2. 写好请求函数后，将该函数封装到vuex中统一管理接口
+
+   ![image-20221124175434033](README.assets/image-20221124175434033.png)
+
+   在action中封装并调用
+
+![image-20221124175522195](README.assets/image-20221124175522195.png)
+
+​		在mutations.js中将获得的数据赋值到vuex变量中
+
+![image-20221124175609765](README.assets/image-20221124175609765.png)
+
+3. 最后在对应的组件调用封装的函数，以及获取数据
+
+![image-20221124175728089](README.assets/image-20221124175728089.png)
+
+![image-20221124175811805](README.assets/image-20221124175811805.png)
+
+## 后端接收请求返回数据
+
+项目模板的后端在server目录下：
+
+![image-20221124180453121](README.assets/image-20221124180453121.png)
+
+1. 首先在routes目录下编写对应组件的路由（请求对应的处理函数）
+
+   ![image-20221124180704473](README.assets/image-20221124180704473.png)
+
+2. 在app.js中将该路由引入
+
+   ![image-20221124180756058](README.assets/image-20221124180756058.png)
+
+3. 设置请求路由
+
+![image-20221124180851436](README.assets/image-20221124180851436.png)
+
+前端通过请求该路由后，后端接收到请求，开始调用该路由的数据处理函数。并将处理结果返回给前端
+
+
+
+# Flex布局
+
+详细：https://www.runoob.com/w3cnote/flex-grammar.html
